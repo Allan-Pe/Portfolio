@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Analytics />
     <nav class="nav" :class="{ scrolled: isScrolled }">
       <div class="nav-inner">
         <a href="#hero" class="nav-logo" @click.prevent="scrollTo('hero')">AP</a>
@@ -38,6 +39,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { Analytics } from '@vercel/analytics/vue'
 import { profile } from './data/portfolio.js'
 import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
