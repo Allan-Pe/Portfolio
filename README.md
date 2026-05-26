@@ -1,5 +1,53 @@
-# Vue 3 + Vite
+# Portfolio — Allan Pereira
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Portfolio personnel développé avec **Vue.js 3** et **Vite**.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Stack
+
+- Vue.js 3 (Composition API)
+- Vite
+- CSS custom (variables, scoped)
+- Google Fonts — Space Grotesk + Syne
+
+## Lancer en local
+
+```bash
+npm install
+npm run dev
+```
+
+## Build production
+
+```bash
+npm run build
+```
+
+## Déploiement
+
+Le projet est déployé via **Vercel**. Chaque `git push` sur `main` déclenche un redéploiement automatique.
+
+## Structure
+
+```
+src/
+├── components/
+│   ├── HeroSection.vue
+│   ├── AboutSection.vue
+│   ├── SkillsSection.vue
+│   ├── ExperienceSection.vue
+│   ├── ProjectsSection.vue
+│   ├── EducationSection.vue
+│   └── ContactSection.vue
+├── data/
+│   └── portfolio.js   ← toutes les données à modifier ici
+├── App.vue
+└── main.js
+```
+
+## Mise à jour du contenu
+
+Toutes les données (expériences, projets, compétences, infos de contact) sont centralisées dans **`src/data/portfolio.js`**. C'est le seul fichier à modifier pour mettre le portfolio à jour.
+
+## Contact
+
+**Allan Pereira** — [allan76440@gmail.com](mailto:allan76440@gmail.com) — [LinkedIn](https://www.linkedin.com/in/pereira-allan-dev-web/) — [GitHub](https://github.com/Allan-Pe)
